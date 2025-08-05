@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW M5 - The Ultimate Driving Machine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d;
+        }
+        /* All page sections are hidden by default */
+        .page-section {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out; /* Add a smooth transition for the fade effect */
+        }
+        /* Show the active page and fade it in */
+        .page-section.active {
+            display: block;
+            opacity: 1;
+        }
+        /* Keep the navigation link active state styling */
+        .nav-link.active {
+            color: #fff;
+            border-bottom: 2px solid #fff;
+        }
+        .nav-link:hover {
+            color: #fff;
+        }
+        /* Style for the image fallback if URLs fail */
+        img.fallback-img {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body class="text-gray-300">
+
+    <header class="bg-black text-white p-4 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">BMW M5</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="nav-link text-gray-400 active">Home</a></li>
+                    <li><a href="#design" class="nav-link text-gray-400">Design</a></li>
+                    <li><a href="#performance" class="nav-link text-gray-400">Performance</a></li>
+                    <li><a href="#interior" class="nav-link text-gray-400">Interior</a></li>
+                    <li><a href="#technology" class="nav-link text-gray-400">Technology</a></li>
+                    <li><a href="#specs" class="nav-link text-gray-400">Specifications</a></li>
+                    <li><a href="#gallery" class="nav-link text-gray-400">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link text-gray-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 p-4">
+
+        <section id="home" class="page-section active">
+            <div class="relative bg-cover bg-center h-screen rounded-xl overflow-hidden" 
+            style="background-image: url('M5\ 1.jpg');"
+            onerror="this.style.backgroundImage='url(https://placehold.co/1920x1080/0A2A5A/FFFFFF?text=BMW+M5+Coupe)';">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center p-4">
+                    <div class="text-white">
+                        <h2 class="text-6xl font-bold mb-4">The New BMW M5</h2>
+                        <p class="text-xl max-w-2xl mx-auto mb-8">Unleash the spirit of the race track with the luxury of a grand tourer. The **BMW M5** is the perfect fusion of dynamic performance and exclusive style.</p>
+                        <a href="#design" class="bg-white text-black px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-gray-200">Explore the M5</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="design" class="page-section">
+            <div class="bg-gray-900 rounded-xl p-8 shadow-xl">
+                <h2 class="text-4xl font-bold mb-6 text-center">Design: An Expression of Power</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
+                    <img src="Aerodynamics bmw.jpg" alt="Aerodynamic Profile of the BMW M5" class="rounded-lg shadow-lg w-full">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">Aerodynamic Profile</h3>
+                        <p class="text-gray-400">Every line and curve of the **BMW M5** is sculpted for performance. The long, sweeping hood, the aggressive front apron, and the subtle spoiler all work in harmony to reduce drag and enhance downforce, ensuring exceptional stability at high speeds.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">Iconic Grille and Lights</h3>
+                        <p class="text-gray-400">The signature kidney grille with its double-bar design and the sleek, powerful laser headlights give the **M5** an unmistakable and commanding presence. These elements are not just for show; they optimize airflow for superior engine cooling.</p>
+                    </div>
+                    <img src="M5 lights.jpeg" alt="BMW M5 Kidney Grille and Lights" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </section>
+
+        <section id="performance" class="page-section">
+            <div class="bg-gray-900 rounded-xl p-8 shadow-xl">
+                <h2 class="text-4xl font-bold mb-6 text-center">Performance: Power Unleashed</h2>
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <img src="M5 engine.webp" alt="BMW M5 Engine" class="rounded-lg shadow-lg w-full">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">TwinPower Turbo V8 Engine</h3>
+                        <p class="text-gray-400">At the core of the **M5** is a 4.4-liter TwinPower Turbo V8 engine that delivers breathtaking power and a thrilling soundtrack. This engine is a masterpiece of engineering, offering incredible responsiveness and a high-revving character.</p>
+                        <ul class="list-disc list-inside mt-4 text-gray-400">
+                            <li>Horsepower: 617 hp</li>
+                            <li>Torque: 553 lb-ft</li>
+                            <li>0-60 mph: 3.0 seconds</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4 text-center">Key Performance Specs</h3>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full text-left">
+                            <thead>
+                                <tr class="border-b-2 border-gray-700">
+                                    <th class="p-3">Feature</th>
+                                    <th class="p-3">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-700">
+                                    <td class="p-3">Drivetrain</td>
+                                    <td class="p-3">M xDrive All-Wheel-Drive with 2WD mode</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="p-3">Transmission</td>
+                                    <td class="p-3">8-speed M Steptronic with Drivelogic</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="p-3">Suspension</td>
+                                    <td class="p-3">Adaptive M Suspension</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="p-3">Brakes</td>
+                                    <td class="p-3">M Compound Brakes (Carbon Ceramic optional)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interior" class="page-section">
+            <div class="bg-gray-900 rounded-xl p-8 shadow-xl">
+                <h2 class="text-4xl font-bold mb-6 text-center">Interior: Crafted for the Driver</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gray-800 rounded-lg p-4 shadow-md">
+                        <img src="M5 seats.jpg" alt="M Sport Seats" class="rounded-lg w-full mb-4">
+                        <h3 class="text-xl font-semibold mb-2">M Sport Seats</h3>
+                        <p class="text-gray-400">Ergonomically designed M Sport seats with integrated headrests and illuminated **M5** logos provide exceptional lateral support and long-distance comfort.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-4 shadow-md">
+                        <img src="M5 cockpit's.avif" alt="Driver's Cockpit" class="rounded-lg w-full mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Driver-Focused Cockpit</h3>
+                        <p class="text-gray-400">The entire cabin is oriented towards the driver, with a perfectly positioned M steering wheel, digital instrument cluster, and head-up display that keeps all vital information in your line of sight.</p>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg p-4 shadow-md">
+                        <img src="M5 performance.jpg" alt="Premium Interior Materials" class="rounded-lg w-full mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Premium Materials</h3>
+                        <p class="text-gray-400">The **M5**'s interior is adorned with the finest materials, from sumptuous Merino leather upholstery to carbon fiber trim, creating an atmosphere of pure, unadulterated luxury.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technology" class="page-section">
+            <div class="bg-gray-900 rounded-xl p-8 shadow-xl">
+                <h2 class="text-4xl font-bold mb-6 text-center">Technology: Innovation at Your Fingertips</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
+                    <img src="Infoinment.avif" alt="Infotainment System" class="rounded-lg shadow-lg w-full">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">BMW iDrive System</h3>
+                        <p class="text-gray-400">The **M5** features the latest BMW iDrive system with a large, high-resolution touchscreen display, intuitive controls, and advanced voice recognition. Seamlessly integrate your digital life with Apple CarPlay and Android Auto.</p>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-2">Driver Assistance Systems</h3>
+                        <p class="text-gray-400">Equipped with a suite of cutting-edge safety and driver-assistance features, the **M5** offers peace of mind on every journey. This includes adaptive cruise control, lane-keeping assist, and a surround-view camera system.</p>
+                    </div>
+                    <img src="M5 driver assisstance.webp" alt="Driver Assistance Features" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </section>
+
+        <section id="specs" class="page-section">
+            <div class="bg-gray-900 rounded-xl p-8 shadow-xl">
+                <h2 class="text-4xl font-bold mb-6 text-center">Detailed Specifications</h2>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-left bg-gray-800 rounded-lg shadow-md">
+                        <thead>
+                            <tr class="bg-gray-700">
+                                <th class="p-4 rounded-tl-lg">Category</th>
+                                <th class="p-4">Specification</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-4 font-semibold">Engine</td>
+                                <td class="p-4">4.4L TwinPower Turbo V8</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-4 font-semibold">Horsepower</td>
+                                <td class="p-4">617 hp @ 6,000 rpm</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-4 font-semibold">Torque</td>
+                                <td class="p-4">553 lb-ft @ 1,800-5,860 rpm</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-4 font-semibold">0-60 mph</td>
+                                <td class="p-4">3.0 seconds</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-4 font-semibold">Transmission</td>
+                                <td class="p-4">8-speed M Steptronic Automatic</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-4 font-semibold">Drivetrain</td>
+                                <td class="p-4">M xDrive All-Wheel-Drive</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-4 font-semibold">Length</td>
+                                <td class="p-4">191.7 inches</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-4 font-semibold">Width</td>
+                                <td class="p-4">75.1 inches</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-4 font-semibold">Height</td>
+                                <td class="p-4">53.6 inches</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-4 font-semibold">Curb Weight</td>
+                                <td class="p-4">4,251 lbs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="page-section">
+            <div class="bg-gray-900 rounded-xl p-8 shadow-xl">
+                <h2 class="text-4xl font-bold mb-6 text-center">Gallery</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <img src="M5 front.jpg" alt="BMW M5 front view" class="rounded-lg shadow-md w-full h-auto">
+                    <img src="m5 back.avif" alt="BMW M5 rear view" class="rounded-lg shadow-md w-full h-auto">
+                    <img src="m5 interior.jpg" alt="BMW M5 interior" class="rounded-lg shadow-md w-full h-auto">
+                    <img src="M5 side.jpg" alt="BMW M5 side profile" class="rounded-lg shadow-md w-full h-auto">
+                    <img src="M5 engine.webp" alt="BMW M5 engine" class="rounded-lg shadow-md w-full h-auto">
+                    <img src="M5.webp" alt="BMW M5" class="rounded-lg shadow-md w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section">
+            <div class="bg-gray-900 rounded-xl p-8 shadow-xl">
+                <h2 class="text-4xl font-bold mb-6 text-center">Contact Us</h2>
+                <p class="text-center text-gray-400 mb-8">Ready to experience the **BMW M5**? Fill out the form below to connect with a specialist.</p>
+                <form class="max-w-xl mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-400 mb-2">Name</label>
+                        <input type="text" id="name" class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-white">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-400 mb-2">Email</label>
+                        <input type="email" id="email" class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-white">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-400 mb-2">Message</label>
+                        <textarea id="message" rows="4" class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-white"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-white text-black py-3 rounded-md font-semibold transition-all duration-300 hover:bg-gray-200">Submit</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-black text-center p-4 mt-8">
+        <p class="text-sm text-gray-500">&copy; 2025 BMW M5 Website. All rights reserved. This is a fictional demonstration website.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pageSections = document.querySelectorAll('.page-section');
+
+            const showPage = (pageId) => {
+                const currentPage = document.querySelector('.page-section.active');
+                const nextPage = document.querySelector(pageId);
+
+                if (currentPage) {
+                    // Fade out the current page
+                    currentPage.style.opacity = '0';
+                    setTimeout(() => {
+                        currentPage.classList.remove('active');
+                        // After fading out, show and fade in the next page
+                        if (nextPage) {
+                            nextPage.classList.add('active');
+                            nextPage.style.opacity = '1';
+                        }
+                    }, 500); // Wait for the transition to finish
+                } else if (nextPage) {
+                    // If no current page, just show the first one
+                    nextPage.classList.add('active');
+                    nextPage.style.opacity = '1';
+                }
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+                document.querySelector(`a[href='${pageId}']`).classList.add('active');
+            };
+
+            // Handle initial page load
+            const initialPage = window.location.hash || '#home';
+            showPage(initialPage);
+
+            // Handle navigation clicks
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const pageId = e.target.getAttribute('href');
+                    history.pushState(null, '', pageId);
+                    showPage(pageId);
+                });
+            });
+
+            // Handle back/forward button clicks
+            window.addEventListener('popstate', () => {
+                const currentPage = window.location.hash || '#home';
+                showPage(currentPage);
+            });
+        });
+    </script>
+
+</body>
+</html>
